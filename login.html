@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录页面</title>
+  <!-- 引入样式表 -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main>
+    <!-- 登录区域 -->
+    <section class="login-section">
+      <h1>登录</h1>
+      <!-- 登录表单 -->
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <!-- 用户名输入框 -->
+          <label for="username">用户名</label>
+          <input type="text" id="username" name="username" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <!-- 密码输入框 -->
+          <label for="password">密码</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+        <!-- 错误提示信息 -->
+        <div id="errorMsg" class="error-message" style="display:none;"></div>
+        <!-- 提交按钮 -->
+        <button type="submit">登录</button>
+      </form>
+    </section>
+  </main>
+  <!-- 引入表单验证脚本 -->
+  <script src="login.js"></script>
+</body>
+</html> 
